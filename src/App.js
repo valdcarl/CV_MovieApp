@@ -25,7 +25,6 @@ const App = () => {
     getMovieRequest(searchValue);
   }, [searchValue]);
 
-
   return (
     <div className={'container-fluid movie-app'}>
       <div className='row d-flex align-items-center mt-4 mb-4'>
@@ -40,5 +39,5 @@ const App = () => {
 };
 
 
-App.listen(process.env.PORT || 8080);
+App.listen(process.env.PORT || 3000);
 export default App;
