@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "bootstrap/dist/css/bootstrap-grid.min.css";
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import './App.css';
 import MovieList from "./components/MovieList";
 import MovieListHeading from "./components/MovieListHeading";
