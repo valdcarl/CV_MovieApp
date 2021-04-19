@@ -11,7 +11,7 @@ const App = () => {
   const [searchValue, setSearchValue] = useState('');
 
   const getMovieRequest = async () => {
-    const url = `http://www.omdbapi.com/?s=?{searchValue}&apikey=3dca0b0f`;
+    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=3dca0b0f`;
 
     const response = await fetch(url);
     const responseJson = await response.json();
@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className={'container-fluid movie-app'}>
       <div className='row d-flex align-items-center mt-4 mb-4'>
-        <MovieListHeading heading='Movies' />
+        <MovieListHeading heading='CV Movies' />
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
       <div className='row'>
